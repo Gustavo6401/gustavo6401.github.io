@@ -3,5 +3,17 @@
     "telefone": "(11) 98174-6450",
     "dataNascimento": "2001-10-10",
     "github": "https://github.com/Gustavo6401",
-    "linkedin": "https://www.linkedin.com/in/gustavo-oliviera-918900182/"
+    "linkedin": "https://www.linkedin.com/in/gustavo-oliviera-918900182/",
+    "experienciasProfissionais": [
+        {
+            "empresa": "Konecta Brazil",
+            "cargo": "Jovem Aprendiz",
+            "desde": "Janeiro 2022"
+        },
+        {
+            "empresa": "Ajax TI",
+            "cargo": "Desenvolvedor Trainee",
+            "desde": "Junho 2021 - Setembro 2021"
+        }
+    ]
 }
