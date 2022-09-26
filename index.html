@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <article>
+            <h1>Gustavo da Silva Oliveira</h1>
+            <section id="dados-contato" class="secao-doc">
+                <div>
+                    <img src="img/Foto 3x4_page-0001 (1).jpg">
+                </div>
+                <div id="informacoes" onload="fetch()">
+                    
+                </div>
+            </section>
+            <div id="secao-dados">
+                <section id="exp-prof" class="secao-doc">
+                    <h2>Experiências Profissionais</h2>
+                    <ul>
+                        <li>
+                            <h3>Konecta Brazil</h3>
+                            <p><strong>Jovem Aprendiz</strong></p>
+                            <h4>Desde Janeiro - 2022</h4>
+                        </li>
+                    </ul>
+                </section>
+                <section id="formacao-academica" class="secao-doc">
+                    <h2>Formação Acadêmica</h2>
+                    <ul>
+                        <li>
+                            <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+                            <p><strong>Centro Universitário Senac</strong></p>
+                        </li>
+                        <li>
+                            <h3>Técnico em Informática</h3>
+                            <p><strong>Instituto Social Nossa Senhora de Fátima</strong></p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <section id="conhecimentos" class="secao-doc">
+                <h2>Conhecimentos</h2>
+                <span>C#</span>
+                <span>Desenvolvimento Web</span>
+                <span>ASP.NET Core</span>
+                <span>React Native</span>
+            </section>
+            <section id="idiomas" class="secao-doc">
+                <h2>Idiomas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <td>Leitura</td>
+                            <td>Escrita</td>
+                            <td>Conversação</td>
+                        </tr>
+                        <tr>
+                            <th>Inglês</th>
+                            <td>Bom</td>
+                            <td>Médio</td>
+                            <td>Médio</td>
+                        </tr>
+                        <tr>
+                            <th>Francês</th>
+                            <td>Médio</td>
+                            <td>Ruim</td>
+                            <td>Ruim</td>
+                        </tr>
+                        <tr>
+                            <th>Japonês</th>
+                            <td>Médio</td>
+                            <td>Ruim</td>
+                            <td>Ruim</td>
+                        </tr>
+                        <tr>
+                            <th>Finlandês</th>
+                            <td>Ruim</td>
+                            <td>Ruim</td>
+                            <td>Ruim</td>
+                        </tr>
+                        <tr>
+                            <th>Alemão</th>
+                            <td>Ruim</td>
+                            <td>Ruim</td>
+                            <td>Ruim</td>
+                        </tr>
+                    </thead>
+                </table>
+            </section>
+            <script>   
+                var informacoes;
+
+                fetch("Informacoes.json")
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log(data)                       
+                        
+                        document.querySelector('#informacoes')
+                            .insertAdjacentHTML('afterbegin',
+                                `<p>E-Mail: <span>${data.email}</span></p><br>` +
+                                `<p>Telefone: <span>${data.telefone}</span></p><br>` +
+                                `<p>Data de Nascimento: <span>${data.dataNascimento}</span></p><br>` +
+                                `<p>Github: <a href='${data.github}'>${data.github}</a></p><br>` +
+                                `<p>Linkedin: <a href='${data.linkedin}'>${data.linkedin}</a></p>`);
+                    });
+            </script>
+        </article>
+    </body>
+</html>
