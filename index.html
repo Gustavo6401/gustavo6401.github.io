@@ -4,6 +4,7 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <link href="css/style.css" rel="stylesheet">
+        <script src="js/setup.js" type="text/javascript" defer></script>
     </head>
     <body>
         <article>
@@ -91,23 +92,6 @@
                     </thead>
                 </table>
             </section>
-            <script>   
-                var informacoes;
-
-                fetch("Informacoes.json")
-                    .then(response => response.json())
-                    .then(data => {
-                        console.log(data)                       
-                        
-                        document.querySelector('#informacoes')
-                            .insertAdjacentHTML('afterbegin',
-                                `<p>E-Mail: <span>${data.email}</span></p><br>` +
-                                `<p>Telefone: <span>${data.telefone}</span></p><br>` +
-                                `<p>Data de Nascimento: <span>${data.dataNascimento}</span></p><br>` +
-                                `<p>Github: <a href='${data.github}'>${data.github}</a></p><br>` +
-                                `<p>Linkedin: <a href='${data.linkedin}'>${data.linkedin}</a></p>`);
-                    });
-            </script>
         </article>
     </body>
 </html>
