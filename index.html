@@ -3,19 +3,56 @@
     <head>
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">        
     </head>
     <body>
-        <nav class="barra-navegacao">
-            <ul>
-                <li><a>Gustavo da Silva Oliveira</a></li>
-                <li><a>Resumo Profissional</a></li>
+        <nav class="navbar">
+            <div class="row">
+                <a class="nav-link inika" href="#">AgilizaWeb</a>
+                <div class="navbar-toggle" id="menuToggle">
+                    <div class="nav-toggle-item"></div>
+                    <div class="nav-toggle-item"></div>
+                    <div class="nav-toggle-item"></div>
+                </div>
+            </div>
+            <ul class="barra-navegacao closed" id="menu">
+                <li class="navbar-li">
+                    <a class="nav-link">Resumo</a>
+                </li>
+                <li class="navbar-li">
+                    <a class="nav-link">Projetos</a>
+                </li>
+                <li class="navbar-li">
+                    <a class="nav-link">Tecnologias</a>
+                </li>
             </ul>
         </nav>
-        <script type="text/javasctipt" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>        
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+        <main>
+            <article class="conteudo-principal">
+                <div class="circulo">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-laptop-fill" viewBox="0 0 16 16">
+                            <path d="M2.5 2A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+                        </svg>
+                    </div>
+                </div>
+                <h1 class="titulo">Olá! Me chamo Gustavo da Silva Oliveira!</h1>
+                <h2 class="subtitulo">Sou o criador da Iniciativa chamada AgilizaWeb!</h2>
+                <p>Tenho como foco desenvolver meus pequenos projetos de Startups e para desenvolver pequenos projetos para pequenas empresas.</p>
+            </article>
+            <article class="projetos">
+                <h2 class="subtitulo">Principais Projetos</h2>
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-item">
+                            <h3>Academy SM</h3>
+                            <p>A Academy SM é sem sombra de dúvidas meu principal projeto! Ela é uma rede social educacional que terá imbutido um ambiente virtual de aprendizagem, afim de aproximar cada vez mais especialistas e educandos, afim de melhorar a educação no Brasil e no mundo.</p>
+                            <br>
+                            <p>A primeira versão estável da Academy SM surgirá em Setembro, que terá suporte para um ambiente virtual de aprendizagem diferenciado, desenvolvido para pequenas e médias empresas. </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
     </body>
 </html>

@@ -1,9 +1,26 @@
 @charset "UTF-8";
 
+:root {
+    --azul: #4D7EBF;
+}
+
+@font-face {
+    font-family: Assistant;
+    src: url(../fonts/Assistant/Assistant-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Inika;
+    src: url(../fonts/Inika/Inika-Regular.ttf);
+}
+
 body {
+    font-family: 'Assistant';
     margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
+    font-size: 20px;
 }
 
 .foto {
@@ -17,4 +34,91 @@ body {
 .carrosel div img {
     width: 250px;
     height: 400px;
+}
+
+.navbar {
+    display: flex;
+    background-color: var(--azul);
+    color: white;
+    padding: 20px;
+    align-items: center;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle-item {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.barra-navegacao {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 9px 9px;
+    font-size: 20px;
+}
+
+.inika {
+    font-family: Inika;
+}
+
+.conteudo-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circulo {
+    margin: 10vh 10vw;
+    width: 300px;
+    height: 300px;
+    clip-path: circle();
+    background-color: var(--azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo div {
+    color: white;
+}
+
+.titulo {
+    margin: 0;
+    padding: 0;
+    font-size: 54px;
+    font-weight: 300;
+}
+
+.subtitulo {
+    margin: 0;
+    padding: 0;
+    font-size: 46px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
