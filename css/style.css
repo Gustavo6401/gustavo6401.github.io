@@ -115,6 +115,37 @@ nav ul li {
     font-weight: 300;
 }
 
+.projetos {
+    background-color: var(--azul);
+    color: white;
+}
+
+.carousel-container {
+    width: 99vw;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5 ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.coluna-2-itens {
+    display: grid;
+    grid-template-columns: 49vw 49vw;
+}
+
+.texto {
+    margin-left: 10px;
+}
+
 @media screen and (max-width: 768px) {
     nav {
         display: flex;
