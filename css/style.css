@@ -2,6 +2,7 @@
 
 :root {
     --azul: #4D7EBF;
+    --verde: #17885d;
 }
 
 @font-face {
@@ -116,7 +117,11 @@ nav ul li {
 }
 
 .projetos {
-    background-color: var(--azul);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--verde);
     color: white;
 }
 
@@ -143,7 +148,11 @@ nav ul li {
 }
 
 .texto {
-    margin-left: 10px;
+    margin-left: 30px;
+}
+
+.image {
+    margin-right: 20px;
 }
 
 .imagem {
@@ -160,11 +169,16 @@ nav ul li {
 }
 
 .prev-btn {
-    left: 10px;
+    left: 10px
 }
 
 .next-btn {
     right: 10px;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 36px;
 }
 
 @media screen and (max-width: 768px) {
