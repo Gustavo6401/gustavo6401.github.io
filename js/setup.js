@@ -1,34 +1,32 @@
-var informacoes;
+let currentSlide = 0
 
-fetch("json/Informacoes.json")
-    .then(response => response.json())
-    .then(data => {
-        console.log(data)
+/**
+ * 
+ * @param {number} index 
+ * @returns {void}
+ */
+function showSlide(index) {
+    const carouselWrapper = document.getElementById('carouselWrapper');
+    const totalSlides = document.querySelectorAll('.carousel-item').length;
 
-        document.querySelector('#informacoes')
-            .insertAdjacentHTML('afterbegin',
-                `<p>E-Mail: <span>${data.email}</span></p><br>` +
-                `<p>Telefone: <span>${data.telefone}</span></p><br>` +
-                `<p>Data de Nascimento: <span>${data.dataNascimento}</span></p><br>` +
-                `<p>Github: <a href='${data.github}'>${data.github}</a></p><br>` +
-                `<p>Linkedin: <a href='${data.linkedin}'>${data.linkedin}</a></p>`);
+    currentSlide = (index + totalSlides) % totalSlides;
 
-        document.querySelector('#exp-prof')
-            .insertAdjacentHTML('afterbegin',
-                `<h2>Experiências Profissionais</h2>` +
-                `<ul>`);
+    const offset = -currentSlide * 100 + '%';
+    carouselWrapper.style.transform = `translateX(${offset})`
+}
 
-        data.experienciasProfissionais.forEach(exp => {
-            document.querySelector('#exp-prof')
-                .insertAdjacentHTML('beforeend',
-                    `<li>` +
-                        `<h3>${exp.empresa}</h3>` +
-                        `<p><strong>${exp.cargo}</strong></p>` +
-                        `<h4>${exp.desde}</h4>` +
-                    `</li>`);
-        });
+/**
+ * 
+ * @returns {void}
+ */
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
 
-        document.querySelector('#exp-prof')
-            .insertAdjacentHTML('beforeend',
-                `</ul>`)
-    });
+/**
+ * @returns {void}
+ */
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}

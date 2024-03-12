@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <link rel="stylesheet" href="css/style.css">        
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <nav class="navbar">
@@ -43,7 +43,7 @@
             <article class="projetos">
                 <h2 class="subtitulo">Principais Projetos</h2>
                 <div class="carousel-container">
-                    <div class="carousel-wrapper">
+                    <div class="carousel-wrapper" id="carouselWrapper">
                         <div class="carousel-item">
                             <div class="coluna-2-itens">
                                 <div class="texto">
@@ -51,15 +51,11 @@
                                     <p>A Academy SM é sem sombra de dúvidas meu principal projeto! Ela é uma rede social educacional que terá imbutido um ambiente virtual de aprendizagem, afim de aproximar cada vez mais especialistas e educandos, afim de melhorar a educação no Brasil e no mundo.</p>
                                     <p>A primeira versão estável da Academy SM surgirá em Setembro, que terá suporte para um ambiente virtual de aprendizagem diferenciado, desenvolvido para pequenas e médias empresas. </p>
                                 </div>
-                                <div class="imagem">
-                                    <img src="img/Grupos (1).png" />
+                                <div>
+                                    <img class="imagem" src="img/Grupos (1).png" />
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="carousel-container">
-                    <div class="carousel-wrapper">
                         <div class="carousel-item">
                             <div class="coluna-2-itens">
                                 <div class="texto">
@@ -68,31 +64,42 @@
                                     <p>O e-commerce foi utilizado por pouco tempo, porém, agora em março, essa ideia foi descontinuada, Alison estava com outras prioridades o que o impediram de dar continuidade no projeto.</p>
                                     <p>O e-commerce ainda está acessível na seguinte URL: <a href="https://www.alisonsilvapoeta.com.br">www.alisonsilvapoeta.com.br</a></p>
                                 </div>
-                                <div class="imagem">
-                                    <img src="img/Alison Silva Poeta.png" alt="Print do E-commerce de Alison Silva" />
+                                <div>
+                                    <img class="imagem" src="img/Alison Silva Poeta.png" alt="Print do E-commerce de Alison Silva" />
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="carousel-container">
-                    <div class="carousel-wrapper">
+                        <div class="carousel-item">
+                            <div class="coluna-2-itens">
+                                <div class="texto">
+                                    <h3>Canal no YouTube: Escola de Programação</h3>
+                                    <p>O canal Escola de Programação tem foco em oferecer para os iniciantes um norte no estudo da programação. Lá, eu já desenvolvi alguns cursos que tem por objetivo ajudar os iniciantes. Tais como o curso de Lógica de Programação, o Curso Básico de C# e estou desenvolvendo o curso de Git e Github. Todos esses cursos tem projetos no final que vão ajudar os iniciantes a desenvolverem suas habilidades técnicas.</p>
+                                    <p>O canal Escola de Programação para mim foi um grande desafio, com ele, consegui sair cada vez mais da minha zona de conforto afim de procurar entender melhor alguns conceitos que são importantes na programação.</p>
+                                    <strong>A Melhor forma de saber se você já sabe de um determinado assunto, é começar a ensinar esse assunto.</strong>
+                                    <p>O link para o Canal é: <a href="https://www.youtube.com/@escoladeprogramacao10">www.youtube.com/@escoladeprogramacao10</a></p>
+                                </div>
+                                <div>
+                                    <img src="img/escola-de-programacao.png" alt="Foto de Perfil do Canal Escola de Programação." />
+                                </div>
+                            </div>
+                        </div>
                         <div class="carousel-item">
                             <div class="coluna-2-itens">
                                 <div class="texto">
                                     <h3>Sistema de Controle de Estoque</h3>
-                                    <p>O gerenciamento de equipamentos feito pela equipe de TI da Konecta Brazil envolvia muitas planilias, um colega de trabalho já teve que atualizar 4 planilias após ter que trocar equipamentos em uma operação de telemarketing. Por isso, foi elaborado o sistema de controle de estoque afim de otimizar a vida dos profissionais de TI. O sistema ainda é utiliado e ocorreu uma grande otimização de rastreamento dos equipamentos.</p>
+                                    <p>O gerenciamento de equipamentos feito pela equipe de TI da Konecta Brazil envolvia muitas planilhas, um colega de trabalho já teve que atualizar 4 planilhas após ter que trocar equipamentos em uma operação de telemarketing. Por isso, foi elaborado o sistema de controle de estoque afim de otimizar a vida dos profissionais de TI. O sistema ainda é utiliado e ocorreu uma grande otimização de rastreamento dos equipamentos.</p>
                                 </div>
-                                <div class="imagem">
-                                    <img src="img/Sistema de Controle de Estoque Konecta Brazil.png" />
+                                <div>
+                                    <img class="imagem" src="img/Sistema de Controle de Estoque Konecta Brazil.png" />
                                 </div>
                             </div>
-                        </div>
+                        </div>                        
                     </div>
-                </div>
-                <div class="carousel-btn prev-btn">&#10094;</div>
-                <div class="carousel-btn next-btn">&#10095;</div>
+                    <a class="carousel-btn prev-btn" onclick="prevSlide()">&#10094;</a>
+                    <a class="carousel-btn next-btn" onclick="nextSlide()">&#10095;</a>
+                </div>        
             </article>
         </main>
+        <script src="js/setup.js" type="text/javascript"></script>
     </body>
 </html>
