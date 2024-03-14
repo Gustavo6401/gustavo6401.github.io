@@ -250,6 +250,15 @@ h3 {
     background-color: white;
 }
 
+@media screen and (max-width: 1268px) {
+    .coluna-2-itens {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media screen and (max-width: 768px) {
     nav {
         display: flex;
