@@ -152,7 +152,7 @@ nav ul li {
 }
 
 .image {
-    margin: 30px;
+    margin-right: 30px;
 }
 
 .imagem {
@@ -256,6 +256,10 @@ h3 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .image {
+        margin-left: 30px;
     }
 }
 
