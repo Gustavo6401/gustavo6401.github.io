@@ -142,7 +142,7 @@ nav ul li {
     box-sizing: border-box;
 }
 
-.coluna-2-itens {
+.meus-projetos {
     display: grid;
     grid-template-columns: 49vw 49vw;
 }
@@ -251,11 +251,15 @@ h3 {
 }
 
 @media screen and (max-width: 1268px) {
-    .coluna-2-itens {
+    .meus-projetos {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .image {
+        margin: 5px;
     }
 }
 
